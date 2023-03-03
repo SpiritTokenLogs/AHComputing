@@ -55,6 +55,11 @@
                     <td scope="col">Subject</td>
                     <td scope="col">Pupil</td>
                     <td scope="col">Teacher</td>
+                    <?php 
+                        if($_SESSION['isAdmin'] == 1] {
+                            echo "<td scope="col">Teacher</td>
+                        }
+                    ?>
                     <td scope="col">Control</td>
                 </thhead>
                 <tbody>
