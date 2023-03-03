@@ -51,11 +51,12 @@
                 <a class="nav-item nav-link" href="dashboard.php">Home</a>
                 <a class="nav-item nav-link" href="all_damages.php">Damages</a>
 
-                <!-- If user is an admin, display links to view all teachers and pupils -->
+                <!-- If user is an admin, display links to view all teachers, pupils and add a teacher -->
                 <?php
                     if($_SESSION['isAdmin'] == 1) {
                         echo '<a class="nav-item nav-link active" href="all_teachers.php">Teachers</a>';
                         echo '<a class="nav-item nav-link" href="all_pupils.php">Pupils</a>';
+                        echo '<a class="nav-item nav-link" href="register_teacher.php">Add a Teacher</a>';
                     }
                 ?>
 
@@ -66,7 +67,7 @@
         <br>
         <h1>All Teachers</h1>
 
-        <!-- Table to display pupils information -->
+        <!-- Table to display teacher information -->
         <div class=tbl">
             <table class="table table-striped table-bordered table-hover table-sm">
                 <thead>
